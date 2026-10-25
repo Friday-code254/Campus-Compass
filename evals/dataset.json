@@ -1,0 +1,92 @@
+[
+  {
+    "id": "attendance-general",
+    "question": "What attendance percentage is required for regular classes?",
+    "answerable": true,
+    "expected_document": "student_handbook.md"
+  },
+  {
+    "id": "attendance-lab",
+    "question": "What attendance percentage is required for chemistry laboratory sessions?",
+    "answerable": true,
+    "expected_document": "chemistry_lab_rules.md"
+  },
+  {
+    "id": "medical-absence",
+    "question": "How soon after returning should I submit the form for a medical absence?",
+    "answerable": true,
+    "expected_document": "student_handbook.md"
+  },
+  {
+    "id": "grade-appeal",
+    "question": "How many business days do I have to appeal a final grade?",
+    "answerable": true,
+    "expected_document": "student_handbook.md"
+  },
+  {
+    "id": "advising-walkin",
+    "question": "When can I visit an academic advisor without an appointment?",
+    "answerable": true,
+    "expected_document": "student_handbook.md"
+  },
+  {
+    "id": "library-weekdays",
+    "question": "What time does the main library close on weekdays?",
+    "answerable": true,
+    "expected_document": "library_guide.md"
+  },
+  {
+    "id": "library-weekends",
+    "question": "What are the library's weekend opening hours?",
+    "answerable": true,
+    "expected_document": "library_guide.md"
+  },
+  {
+    "id": "library-renewals",
+    "question": "How many times may I renew a library book?",
+    "answerable": true,
+    "expected_document": "library_guide.md"
+  },
+  {
+    "id": "missed-exam",
+    "question": "What is the deadline to request a make-up after missing an exam?",
+    "answerable": true,
+    "expected_document": "exam_guide.md"
+  },
+  {
+    "id": "lab-checklist",
+    "question": "What safety preparation is required before the first chemistry practical?",
+    "answerable": true,
+    "expected_document": "chemistry_lab_rules.md"
+  },
+  {
+    "id": "counseling-sessions",
+    "question": "How many counseling sessions are included each semester?",
+    "answerable": true,
+    "expected_document": "student_support.md"
+  },
+  {
+    "id": "resume-dropin",
+    "question": "When does the career center hold drop-in resume reviews?",
+    "answerable": true,
+    "expected_document": "student_support.md"
+  },
+  {
+    "id": "parking-fine",
+    "question": "What is the fine for parking in a reserved staff space?",
+    "answerable": false,
+    "expected_document": null
+  },
+  {
+    "id": "scholarship-deadline",
+    "question": "When is the deadline to apply for the international merit scholarship?",
+    "answerable": false,
+    "expected_document": null
+  },
+  {
+    "id": "appeal-vs-renewal",
+    "question": "Can I renew a library book to get more time to appeal a final grade?",
+    "answerable": false,
+    "expected_document": null
+  }
+]

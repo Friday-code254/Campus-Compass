@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f8fb">
+    <title>Campus Compass</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Campus Compass home">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>Campus <strong>Compass</strong></span>
+      </a>
+      <div class="topbar-meta"><span class="status-dot"></span> Local document workspace</div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-heading">
+          <div>
+            <p class="eyebrow">YOUR LIBRARY</p>
+            <h2>Documents</h2>
+          </div>
+          <span id="document-count" class="count-pill">0</span>
+        </div>
+
+        <form id="upload-form" class="upload-card">
+          <input id="file-input" name="file" type="file" accept=".pdf,.txt,.md" hidden>
+          <button id="choose-file" class="upload-button" type="button">
+            <span class="upload-icon" aria-hidden="true">↑</span>
+            <span><strong>Add a document</strong><small>PDF, TXT, or Markdown · 10 MB max</small></span>
+          </button>
+          <p id="upload-status" class="inline-status" aria-live="polite"></p>
+        </form>
+
+        <div class="document-list-heading">UPLOADED FILES</div>
+        <ul id="document-list" class="document-list" aria-live="polite"></ul>
+        <div id="empty-documents" class="empty-documents">
+          <span class="empty-icon" aria-hidden="true">▤</span>
+          <p>Your document list is empty.</p>
+          <small>Add a guide to start asking questions.</small>
+        </div>
+
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">i</span>
+          <p>Sample policies are fictional. Check official sources for real campus decisions.</p>
+        </div>
+      </aside>
+
+      <section class="main-panel">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow-row"><span class="hero-icon" aria-hidden="true">✳</span><span>CITE-FIRST CAMPUS Q&amp;A</span></div>
+            <h1>Find the answer.<br><span>See where it came from.</span></h1>
+            <p>Ask a question about your uploaded guides. Campus Compass searches the documents and shows the passages behind each response.</p>
+          </div>
+          <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-center">⌖</div><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span></div>
+        </div>
+
+        <div class="demo-banner"><span aria-hidden="true">✦</span><span><strong>Demo workspace</strong> — the included Northstar Institute policies are fictional examples.</span></div>
+
+        <div id="conversation" class="conversation" aria-live="polite">
+          <div id="welcome" class="welcome-state">
+            <div class="welcome-icon" aria-hidden="true">⌕</div>
+            <h2>What would you like to know?</h2>
+            <p>Upload a document, then ask about something it covers.</p>
+            <div class="suggestions">
+              <button type="button" class="suggestion">How many times can I renew a library book?</button>
+              <button type="button" class="suggestion">What attendance is needed for chemistry labs?</button>
+              <button type="button" class="suggestion">How do I request a make-up exam?</button>
+            </div>
+          </div>
+        </div>
+
+        <form id="chat-form" class="composer">
+          <label class="sr-only" for="question-input">Your question</label>
+          <textarea id="question-input" rows="1" maxlength="2000" placeholder="Ask a question about your documents…" required></textarea>
+          <button id="send-button" class="send-button" type="submit" aria-label="Send question">↑</button>
+          <div class="composer-hint"><span>Enter to send</span><span>Answers are grounded in uploaded documents</span></div>
+        </form>
+        <footer class="page-footer"><span>Campus Compass</span><span>Built for careful answers, with sources attached.</span></footer>
+      </section>
+    </main>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
+
